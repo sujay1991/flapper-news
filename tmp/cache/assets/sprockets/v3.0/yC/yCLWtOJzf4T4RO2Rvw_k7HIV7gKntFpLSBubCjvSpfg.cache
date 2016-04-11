@@ -1,0 +1,46 @@
+{:uriI"‚file://app/assets/javascripts/home/home.html?type=text/ng-html&id=acceda1fd4bdd7c77502561d47bbbc98b4404e86f46b8c8a8bb8ebe9bc0ab271:ET:load_pathI"app/assets/javascripts;T:filenameI"*app/assets/javascripts/home/home.html;T:	nameI"home/home;T:logical_pathI"home/home.html;T:content_typeI"text/ng-html;T:sourceI"m
+  <script type="text/ng-template" id="/home.html">
+    <div class="page-header">
+      <h1>Flapper News</h1>
+    </div>
+
+    <div ng-repeat="post in posts | orderBy:'-upvotes'">
+      <span class="glyphicon glyphicon-thumbs-up"
+        ng-click="incrementUpvotes(post)"></span>
+      {{post.upvotes}}
+      <span style="font-size:20px; margin-left:10px;">
+        <a ng-show="post.link" href="{{post.link}}">
+          {{post.title}}
+        </a>
+        <span ng-hide="post.link">
+          {{post.title}}
+        </span>
+      </span>
+      <span>
+        <a href="#/posts/{{$index}}">Comments</a>
+      </span>
+    </div>
+
+    <form ng-submit="addPost()"
+      style="margin-top:30px;">
+      <h3>Add a new post</h3>
+
+      <div class="form-group">
+        <input type="text"
+        class="form-control"
+        placeholder="Title"
+        ng-model="title"></input>
+      </div>
+      <div class="form-group">
+        <input type="text"
+        class="form-control"
+        placeholder="Link"
+        ng-model="link"></input>
+      </div>
+      <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+  </script>;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"8file-digest://app/assets/javascripts/home/home.html;TT:charsetI"
+utf-8;F:digest"%n+'Ærı¬¬{ƒÁ‹IòËŠäÂ}Ç[!÷E Kö:lengthim:dependencies_digest"%€[ó¨DEód6µq| ÌxíïLÑÏEB®¼œ:idI"Eacceda1fd4bdd7c77502561d47bbbc98b4404e86f46b8c8a8bb8ebe9bc0ab271;F:
+mtimel+‰@W

@@ -1,0 +1,16 @@
+{
+  "name": "flapper-news",
+  "authors": [
+    "Sujay Natarajan <sujay.natarajan@mavs.uta.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6"
+  }
+}
